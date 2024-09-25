@@ -36,6 +36,35 @@ const Choose = () => {
     };
 
 
+    // const generateText = () => {
+    //     let textEs = 'Generate me text for essay';
+    //     console.log("Generation of text...");
+    //     const conditional = {
+    //         method: "POST",
+    //         headers: {
+    //             Authorization: `Bearer ${apikey}`,
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify({
+    //             prompt: textEs,
+    //             max_tokens: 350,
+    //         }),
+    //     }
+    //     try{
+    //         const response = await fetch(
+    //             "https://api.openai.com/v1/engines/gpt-3.5-turbo-instruct/completions",
+    //             conditional
+    //         );
+    //         const data = await response.json();
+    //         console.log('data: ', data);
+    //         setImageUrl(data.data[0].url);
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    //     }
+    // }
+
+
 
     const generateImage = async (promptText) => {
         console.log('started');
